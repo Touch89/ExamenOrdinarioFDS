@@ -1,51 +1,96 @@
-﻿using System;
+﻿using ExamenOrdinarioDS_Campos_Kuuk_Yupit;
+using System;
 using System.Collections.Generic;
 
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
     public class Persona : IPersona   //Clase para el objeto persona
     {
-        this.Identificador = Identificador;
-        this.Nombre = Nombre;
-        this.Mascotas = new List<Mascota>();
+        private int identificador;  
+        private string nombre;
+        private List<Mascota> = new list <mascotas>; //Creacion lista mascota 
 
-        public int Identificador { get; set; }
+        public int Identificador { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Nombre { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        public Persona(int identificador, string nombre)
         {
-            
+            this.identificador = identificador;
+            this.nombre = nombre;
+            this.mascotas = new List<Mascota>();
         }
 
-        public string Nombre { get; set; }
-
-
-
-        void ObtenerMascotas()
+        public int ObtenerIdentificador()   //Funcion para obtener el identificador de la mascota
         {
-            return this.Mascotas;
+            return this.identificador;
         }
 
-        void ObtenerMascotasIdentificador()  //Obtener mascotas por medio del identificador numérico
+        public string ObtenerNombre()   //Funcion para obtener el nombre de la mascota
         {
-
+            return this.nombre;
         }
 
-        void AcariciarMascota()
+        public List<Mascota> ObtenerMascotas()  //Funcion para obtener las mascotas
         {
-            //Es lo mismo que en el acariciar solo que a todas las mascotas que posea en la lista MascotaS
+            return this.mascotas;
         }
 
-        void Acariciar()
+        public Mascota ObtenerMascotaPorIdentificador(int identificador)
         {
-             string ResponderAcaricia = Console.ReadLine();
-             if(condicion de acariceable = Si) {
-                return Console.WriteLine($"{Persona} acaricia a {Mascota}");
-            } else {
-                return Console.WriteLine($"{Persona} no puede acariciar a {Mascota}");
+            foreach (var mascota in this.mascotas)
+            {
+                if (mascota.ObtenerIdentificador() == identificador)
+                {
+                    return mascota;
+                }
+            }
+
+            return null;
+        }
+
+        public void AcariciarMascota(Mascota mascota)
+        {
+            Console.WriteLine($"{this.nombre} acaricia a {mascota.nombre}");
+        }
+
+
+        public void Acariciar()
+        {
+            string ResponderACaricia = Console.ReadLine();
+            if (ResponderACaricia == "Si")
+            {
+                foreach (var mascota in this.mascotas)
+                {
+                    if (mascota.IsAcariciable())
+                    {
+                        Console.WriteLine($"{this.nombre} acaricia a {mascota.nombre}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{this.nombre} no puede acariciar a {mascota.nombre}");
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine($"{this.nombre} no acaricia a ninguna mascota");
             }
         }
 
-        void AgregarMascota()
+        public void AgregarMascota(Mascota mascota)
         {
-            return Mascotas.Add;
+            this.mascotas.Add(mascota);
+        }
+
+        public void ObtenerMascotas(List<Persona> personas)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void ObtenerMascotasIdentificador(int identificador)
+        {
+            throw new NotImplementedException();
         }
     }
 }
+
