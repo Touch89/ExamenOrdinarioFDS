@@ -8,7 +8,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
     {
         private int identificador;  
         private string nombre;
-        private List<Mascota> = new list <mascotas>; //Creacion lista mascota 
+        private List<Mascota>; //Creacion lista mascota 
 
         public int Identificador { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public string Nombre { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
