@@ -224,5 +224,16 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
             }
         }
+
+        static void SalirDelPrograma()
+        {
+            Console.WriteLine("Saliendo del sistema, vuelva pronto, adios!");
+        }
+
+        static void SimulacionDeInteracciones()
+        {
+            Console.WriteLine("Escribe el ID que deseas buscar");
+            Console.ReadLine();
+        }
     }
 }
