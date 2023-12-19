@@ -10,6 +10,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
     {
         static void Main(string[] args)
         {
+
             //Menu principal que se le muestra al usuario
             Console.WriteLine("Bienvenido a CaninCenter");
             Console.WriteLine("Seleecione una opcion");
@@ -209,18 +210,5 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
 
             }
-        }
-        static void SimulacionDeInteracciones()
-        {
-            //menu al seleccionar simulacion de interacciones 
-            Console.WriteLine("Escribe el ID de la persona a buscar");
-            Console.ReadLine();
-        }
-        static void SalirDelPrograma()
-        {
-            //menu para salir del programa 
-            Console.WriteLine("Saliendo del sistema, vuelve pronto, adios!");
-        }
 
-    }
 }
