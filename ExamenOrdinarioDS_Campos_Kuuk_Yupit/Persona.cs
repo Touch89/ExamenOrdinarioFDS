@@ -20,7 +20,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
         void ObtenerMascotas()
         {
-
+            return this.Mascotas;
         }
 
         void ObtenerMascotasIdentificador()  //Obtener mascotas por medio del identificador numérico
@@ -46,7 +46,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
         void AgregarMascota()
         {
-            Mascotas.Add;
+            return Mascotas.Add;
         }
     }
 }

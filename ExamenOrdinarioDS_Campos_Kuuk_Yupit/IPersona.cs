@@ -8,14 +8,12 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
     public interface IPersona    //Creación de la interfaz persona
     {
-        int Identificador { get; set; }    //Con id se refiere a un identificador numérico
+        int Identificador { get; set; }
         string Nombre { get; set; }
-
-        private List<Persona> Personas { get; set; } //Declaración de lista de personas 
-        void ObtenerMascotas();
-        void ObtenerMascotasIdentificador();   //Obtener mascotas por medio del identificador numérico
-        void AcariciarMascota();
+        void ObtenerMascotas(List<Persona> personas);
+        void ObtenerMascotasIdentificador(int identificador);
+        void AcariciarMascota(Mascota mascota);
         void Acariciar();
-        void AgregarMascota();
+        void AgregarMascota(Mascota mascota);
     }
 }
