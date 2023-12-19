@@ -43,8 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Capibara.cs" />
+    <Compile Include="Gato.cs" />
+    <Compile Include="IBailar.cs" />
+    <Compile Include="IMascota.cs" />
+    <Compile Include="Pajaro.cs" />
+    <Compile Include="Perro.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IAcariciable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
