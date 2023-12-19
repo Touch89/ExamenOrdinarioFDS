@@ -86,7 +86,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             Console.WriteLine("*Lo acaricia*");
         }
 
-        public Capibara(int id, string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
+        public Capibara(string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
         {
             this.Id = lastIdAdded + 1;
             this.Nombre = nombre;
