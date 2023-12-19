@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Emilio
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
     public class Gato : IMascota, IAcariciable, IBailar
@@ -64,7 +64,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         }
         public Persona Persona { get; set; }
         private List<Persona> _personas;
-
+        //Comportamientos
         public void HacerRuido()
         {
             Console.WriteLine("miau miau");
@@ -88,7 +88,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         {
             Console.WriteLine("*Lo acaricia*");
         }
-
+        //Constructor
         public Gato( string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
         {
             this.Id = lastIdAdded + 1;

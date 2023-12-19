@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
+    //Interfaz para que baile
     interface IBailar
     {
         void Bailar();
