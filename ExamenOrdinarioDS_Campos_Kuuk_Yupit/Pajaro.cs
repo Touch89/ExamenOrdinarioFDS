@@ -5,8 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using ExamenOrdinarioDS_Campos_Kuuk_Yupit.Properties;
 
+//Emilio
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
+    //Clase para crear un pájaro
     public class Pajaro : IMascota, IBailar
     {
 
@@ -70,6 +72,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             Console.WriteLine("pio pio");
         }
 
+        //Metodo para cambiar de dueño
         public void CambiarDuenio(string nombre)
         {
             foreach (var duenio in _personas)
@@ -83,12 +86,12 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
                 throw new Exception("No se encontró a la persona");
             }
         }
-
+        //Metodos para comportamientos
         public void ResponderACaricia()
         {
             Console.WriteLine("*Lo acaricia*");
         }
-
+        //Constructor
         public Gato(string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
         {
             this.Id = lastIdAdded + 1;
