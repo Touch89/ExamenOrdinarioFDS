@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
-    public interface IPersona    //Creación de la interfaz persona
+    public interface IPersona    //Interfaz persona
     {
-        int Identificador { get; set; }    //Con id se refiere a un identificador numérico
+        int Identificador { get; set; }
         string Nombre { get; set; }
-        void ObtenerMascotas();
-        void ObtenerMascotasIdentificador();   //Obtener mascotas por medio del identificador numérico
-        void AcariciarMascota();
-        void Acariciar(); 
-        void AgregarMascota();
+        void ObtenerMascotas(List<Persona> personas);
+        void ObtenerMascotasIdentificador(int identificador);
+        void AcariciarMascota(Mascota mascota);
+        void Acariciar();
+        void AgregarMascota(Mascota mascota);
     }
 }
+
