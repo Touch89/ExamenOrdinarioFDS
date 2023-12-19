@@ -14,6 +14,6 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         Persona Persona { get;}
 
         void HacerRuido();
-        void CambiarDuenio();
+        void CambiarDuenio(string nombre);
     }
 }

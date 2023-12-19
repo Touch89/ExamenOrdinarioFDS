@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
-    public class Perro : IMascota, IAcariciable, IBailar
+    public class Gato : IMascota, IAcariciable, IBailar
     {
 
         public int Id
@@ -35,7 +35,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             get { return _edad; }
             set
             {
-                if (value < 0 || value > 14)
+                if (value < 0 || value > 18)
                 {
                     throw new Exception("Ingrese una edad realista");
                 }
@@ -67,7 +67,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
         public void HacerRuido()
         {
-            Console.WriteLine("guau guau");
+            Console.WriteLine("miau miau");
         }
 
         public void CambiarDuenio(string nombre)
@@ -89,7 +89,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             Console.WriteLine("*Lo acaricia*");
         }
 
-        public Perro(int id, string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
+        public Gato(int id, string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
         {
             this.Id = lastIdAdded + 1;
             this.Nombre = nombre;
@@ -100,14 +100,14 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             lastIdAdded++;
         }
 
-        public void Grunir()
+        public void Ronronearr()
         {
-            Console.WriteLine("grr grr");
+            Console.WriteLine("prr prr");
         }
 
-        public void MoverLaCola()
+        public void Rasguniar()
         {
-            Console.WriteLine("Mueve la cola");
+            Console.WriteLine("*Te putea*");
         }
 
         public void Bailar()
