@@ -10,6 +10,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
