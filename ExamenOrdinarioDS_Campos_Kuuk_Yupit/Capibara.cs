@@ -1,13 +1,12 @@
-﻿using ExamenOrdinarioDS_Campos_Kuuk_Yupit.Properties;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using ExamenOrdinarioDS_Campos_Kuuk_Yupit.Properties;
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
-    public class Perro : IMascota, IAcariciable, IBailar
+    public class Capibara : IMascota
     {
 
         public int Id
@@ -35,7 +34,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             get { return _edad; }
             set
             {
-                if (value < 0 || value > 14)
+                if (value < 0 || value > 11)
                 {
                     throw new Exception("Ingrese una edad realista");
                 }
@@ -44,9 +43,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         }
         public enum TemperamentoEnum
         {
-            amable,
-            nervioso,
-            agresivo,
+            amable
         }
 
         private TemperamentoEnum _temperamento;
@@ -67,7 +64,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
         public void HacerRuido()
         {
-            Console.WriteLine("guau guau");
+            Console.WriteLine("cui cui");
         }
 
         public void CambiarDuenio(string nombre)
@@ -89,7 +86,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             Console.WriteLine("*Lo acaricia*");
         }
 
-        public Perro(int id, string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
+        public Capibara(int id, string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
         {
             this.Id = lastIdAdded + 1;
             this.Nombre = nombre;
@@ -100,19 +97,10 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             lastIdAdded++;
         }
 
-        public void Grunir()
+        public void NoHaceNada()
         {
-            Console.WriteLine("grr grr");
+            Console.WriteLine("*No hace nada*");
         }
 
-        public void MoverLaCola()
-        {
-            Console.WriteLine("Mueve la cola");
-        }
-
-        public void Bailar()
-        {
-            Console.WriteLine($"{this.Nombre} esta realizando unos pasos bien perrones");
-        }
-    }
+    }   
 }
