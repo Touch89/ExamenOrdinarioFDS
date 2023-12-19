@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
-    public interface IPersona    //Creación de la interfaz persona
+    public interface IPersona    //Interfaz persona
     {
         int Identificador { get; set; }
         string Nombre { get; set; }

@@ -1,17 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 {
     public class Persona : IPersona   //Clase para el objeto persona
     {
-        public string Nombre() 
-        {
-            
-        }
+        this.Identificador = Identificador;
+        this.Nombre = Nombre;
+        this.Mascotas = new List<Mascota>();
 
         public int Identificador { get; set; }
         {
-
+            
         }
 
         public string Nombre { get; set; }
@@ -35,13 +35,12 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
         void Acariciar()
         {
-            /*
-             if(condicion de acariceable = true) {
-                Console.WriteLine($"{Persona} acaricia a {Mascota}");
+             string ResponderAcaricia = Console.ReadLine();
+             if(condicion de acariceable = Si) {
+                return Console.WriteLine($"{Persona} acaricia a {Mascota}");
             } else {
-                Console.WriteLine($"{Persona} no puede acariciar a {Mascota}");
+                return Console.WriteLine($"{Persona} no puede acariciar a {Mascota}");
             }
-             */
         }
 
         void AgregarMascota()
