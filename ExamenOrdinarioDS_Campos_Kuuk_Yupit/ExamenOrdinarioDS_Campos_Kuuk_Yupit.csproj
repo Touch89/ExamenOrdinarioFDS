@@ -43,6 +43,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
+    <Compile Include="IPersona.cs" />
+    <Compile Include="ListaDePersonas.cs" />
+    <Compile Include="Persona.cs" />
+
     <Compile Include="Capibara.cs" />
     <Compile Include="Gato.cs" />
     <Compile Include="IBailar.cs" />
@@ -50,6 +55,7 @@
     <Compile Include="ListaMascotas.cs" />
     <Compile Include="Pajaro.cs" />
     <Compile Include="Perro.cs" />
+
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="IAcariciable.cs" />
