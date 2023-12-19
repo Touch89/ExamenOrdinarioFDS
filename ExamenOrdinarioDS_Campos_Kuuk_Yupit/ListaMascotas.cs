@@ -43,11 +43,4 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         return null;
     }
 }
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
-=======
-}
->>>>>>> 6d69c11f20485047ecf87699c925b0e0c3e72f60
