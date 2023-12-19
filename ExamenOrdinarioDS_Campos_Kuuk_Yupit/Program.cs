@@ -68,27 +68,27 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         }
         static void AdministracionDelCentro()
         {
-            
-            
-                //menu al seleccionar administracion del centro 
-                Console.WriteLine("Selecciona una opcion");
-                Console.WriteLine("1) Administracion de personas");
-                Console.WriteLine("2) Administracion de mascotas");
-                Console.WriteLine("3) Regresar a menu anterior");
-                var opcionDelMenu1 = Console.ReadLine();
 
 
-                switch (opcionDelMenu1)
-                {
-                    case "1":
-                        //menu administracion de personas 
-                        Console.WriteLine("Selecciona una opcion");
-                        Console.WriteLine("1) Mostrar las personas registradas");
-                        Console.WriteLine("2) Registrar personas nuevas");
-                        Console.WriteLine("3) Buscar personas por nombre");
-                        Console.WriteLine("4) Examinar persona");
-                        Console.WriteLine("5) Regresar al menu anterior");
-                        var opcionDelMenu1_1 = Console.ReadLine();
+            //menu al seleccionar administracion del centro 
+            Console.WriteLine("Selecciona una opcion");
+            Console.WriteLine("1) Administracion de personas");
+            Console.WriteLine("2) Administracion de mascotas");
+            Console.WriteLine("3) Regresar a menu anterior");
+            var opcionDelMenu1 = Console.ReadLine();
+
+
+            switch (opcionDelMenu1)
+            {
+                case "1":
+                    //menu administracion de personas 
+                    Console.WriteLine("Selecciona una opcion");
+                    Console.WriteLine("1) Mostrar las personas registradas");
+                    Console.WriteLine("2) Registrar personas nuevas");
+                    Console.WriteLine("3) Buscar personas por nombre");
+                    Console.WriteLine("4) Examinar persona");
+                    Console.WriteLine("5) Regresar al menu anterior");
+                    var opcionDelMenu1_1 = Console.ReadLine();
 
                     switch (opcionDelMenu1_1)
                     {
@@ -111,18 +111,18 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
                             break;
 
                     }
-                        break;
+                    break;
 
-                    case "2":
-                        //menu administracion de mascotas 
-                        Console.WriteLine("Selecciona una opcion");
-                        Console.WriteLine("1) Mostrar las mascotas registradas");
-                        Console.WriteLine("2) Registrar nueva mascota");
-                        Console.WriteLine("3) Buscar mascota por especie");
-                        Console.WriteLine("4) Buscar mascota por nombre");
-                        Console.WriteLine("4) Examinar mascota");
-                        Console.WriteLine("5) Regresar al menu anterior");
-                        var opcionDelMenu1_2 = Console.ReadLine();
+                case "2":
+                    //menu administracion de mascotas 
+                    Console.WriteLine("Selecciona una opcion");
+                    Console.WriteLine("1) Mostrar las mascotas registradas");
+                    Console.WriteLine("2) Registrar nueva mascota");
+                    Console.WriteLine("3) Buscar mascota por especie");
+                    Console.WriteLine("4) Buscar mascota por nombre");
+                    Console.WriteLine("4) Examinar mascota");
+                    Console.WriteLine("5) Regresar al menu anterior");
+                    var opcionDelMenu1_2 = Console.ReadLine();
 
                     switch (opcionDelMenu1_2)
                     {
@@ -146,16 +146,16 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
                     }
                     break;
-                   
-                    case "3":
 
-                        return;
+                case "3":
+
+                    return;
 
 
-                }
-           
             }
-    
+
+        }
+
         static void AdministracionDeAdopciones()
         {
             //menu al seleccionar administracion de adopciones 
@@ -210,5 +210,6 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
 
 
             }
-
+        }
+    }
 }
