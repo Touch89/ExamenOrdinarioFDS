@@ -47,6 +47,7 @@
     <Compile Include="Gato.cs" />
     <Compile Include="IBailar.cs" />
     <Compile Include="IMascota.cs" />
+    <Compile Include="ListaMascotas.cs" />
     <Compile Include="Pajaro.cs" />
     <Compile Include="Perro.cs" />
     <Compile Include="Program.cs" />

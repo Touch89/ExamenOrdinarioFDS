@@ -89,7 +89,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
             Console.WriteLine("*Lo acaricia*");
         }
 
-        public Perro(int id, string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
+        public Perro(string nombre, int edad, TemperamentoEnum temperamento, Persona persona)
         {
             this.Id = lastIdAdded + 1;
             this.Nombre = nombre;
