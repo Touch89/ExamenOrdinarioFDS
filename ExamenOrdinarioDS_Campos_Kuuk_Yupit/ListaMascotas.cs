@@ -10,3 +10,7 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
     {
     }
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
