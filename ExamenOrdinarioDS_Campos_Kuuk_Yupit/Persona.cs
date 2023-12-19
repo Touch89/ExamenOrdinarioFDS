@@ -1,4 +1,4 @@
-﻿using ExamenOrdinarioDS_Campos_Kuuk_Yupit;
+using ExamenOrdinarioDS_Campos_Kuuk_Yupit;
 using System;
 using System.Collections.Generic;
 
@@ -93,4 +93,5 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         }
     }
 }
+
 

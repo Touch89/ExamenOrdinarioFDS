@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,3 +18,4 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
         void AgregarMascota(Mascota mascota);
     }
 }
+
