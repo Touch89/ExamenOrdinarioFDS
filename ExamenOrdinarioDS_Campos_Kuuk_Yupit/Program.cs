@@ -109,6 +109,9 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
                         case "5":
 
                             break;
+                        default:
+                            Console.WriteLine("Opción inválida. Porfavor ingresa una de las opciones validas");
+                            break;
 
                     }
                     break;
@@ -143,6 +146,10 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
                         case "5":
 
                             break;
+                        default:
+                            Console.WriteLine("Opción inválida. Porfavor ingresa una de las opciones validas");
+                            break;
+
 
                     }
                     break;
@@ -177,6 +184,9 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
                 case "3":
 
                     break;
+                default:
+                    Console.WriteLine("Opción inválida. Porfavor ingresa una de las opciones validas");
+                    break;
 
             }
         }
@@ -206,10 +216,27 @@ namespace ExamenOrdinarioDS_Campos_Kuuk_Yupit
                 case "4":
 
                     break;
+                default:
+                    Console.WriteLine("Opción inválida. Porfavor ingresa una de las opciones validas");
+                    break;
 
 
 
             }
+
+
+        }
+
+        static void SalirDelPrograma()
+        {
+            Console.WriteLine("Saliendo del sistema, vuelva pronto, adios!");
+        }
+
+        static void SimulacionDeInteracciones()
+        {
+            Console.WriteLine("Escribe el ID que deseas buscar");
+            Console.ReadLine();
+
         }
     }
 }
